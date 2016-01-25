@@ -1,0 +1,28 @@
+import pyodbc
+#import graphlab
+
+
+
+driver = 'SQL Server'
+server = '*****'
+db1 = '****'
+tcon = 'yes'
+uname = '****'
+pword = '*****'
+
+
+connection = pyodbc.connect(driver='{SQL Server}', host=server, database=db1,
+                       user=uname, password=pword)
+print "connection Established"
+cursor = connection.cursor()
+SQLCommand = ("SELECT * from TABLE")
+cursor.execute(SQLCommand)  
+
+#connection.commit()  
+
+for rows in cursor.fetchall(): 
+    for field in rows:  
+        print str(field)
+         
+
+connection.close()  
