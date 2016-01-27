@@ -1,3 +1,5 @@
+# Install your licensed copy of GraphLab Create
+pip install --upgrade --no-cache-dir https://get.dato.com/GraphLab-Create/1.8/your registered email address here/your product key here/GraphLab-Create-License.tar.gz
 
 Product key: C665-4BB7-2709-4D0E-4B18-3FF8-DBF8-E2D0
 
